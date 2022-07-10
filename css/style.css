@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    padding: 80px 0 0; /*para que flote encima del contenido */
+}
+
+.header{
+    background-color: black;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;   
+
+}
+/*****************NAV*******************/
+.nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+}
+
+.nav-link{
+    color: white;
+    text-decoration: none;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img{
+    padding-left: 30px;
+    height: 35px;
+    width: auto;
+
+}
+
+.nav-menu{
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+
+}
+
+.nav-menu-item{
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+}
+
+.nav-menu-item:hover{
+    font-size: 20px;
+    transition: all .3s ;
+
+}
+
+.nav-menu-link{
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+
+.nav-menu-link:hover,
+.nav-menu-link_active{
+    background-color: orangered;
+    transition: .4s;
+
+}
+
+.nav-toggle {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 35px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+
+    display: none;
+
+}
+/******************* HERO****************/
+.hero{
+    height: 100vh;
+    width:100%;
+
+    background-image: url(/img/background-hand-teclar.avif);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
+
+
+
+
+
+
+/******************* MEDIAS****************/
+
+@media (max-width: 768px){
+    body{
+      
+        padding-top: 60px 20px 0; /* para que flote encima del contenido*/
+    }
+    
+    .header{
+        height: 60px;
+    }
+    /******************NAV***************************************/
+    .logo{
+        font-size: 25px;
+        font-weight: bold;
+        padding: 0 20px;
+        line-height: 60px; /*tamaño del header*/
+    }
+    
+    .nav-menu{
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+        list-style: none;
+        background-color: #2c3e50;
+        position: fixed;
+        left: 0;
+        top: 80px;
+        width: 100%;
+        padding: 20px 0;
+
+        height: calc(100% - 60px);
+        overflow-y: auto;
+
+        left: 100%;
+        transition: left 0.3s;
+    }
+    
+    .nav-menu-item{
+        line-height: 70px;
+    }
+    
+
+    .nav-menu-link:hover,
+    .nav-menu-link_active{
+        background: none;
+        color: #4b81b6;
+        transition: .4s;
+    
+    }
+    
+    .nav-toggle {
+
+        display: block;
+    
+    }
+
+    .nav-menu_visible{
+        left: 0;
+    }
+
+    /************HERO*********************/
+
+    .header{
+        
+        height: 80px;
+        
+       
+    
+    }
+}
