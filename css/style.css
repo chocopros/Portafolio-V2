@@ -548,7 +548,7 @@ footer p{
 
     /************HERO*********************/
     .hero{
-        height: 100vh;
+        height: calc(100vh - 80px);
         width:100%;
         background-image: url(/img/background-hand-teclar.avif);
         background-size: cover;
