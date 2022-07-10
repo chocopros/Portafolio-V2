@@ -131,10 +131,104 @@ body{
     color: orangered;
 }
 
+/**************** About Me **********************/
+
+.about{
+	width: 100%;
+	padding: 100px 5%;
+	background-color: white;
+}
+
+.body-about{
+    display: flex;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+.body-about img{
+    height: auto;
+	width: 500px;
+    border-radius: 50%;
+    margin-right: 50px;
+}
+
+.body-about h2{
+    margin-bottom: 20px;
+    font-size: 70px;
+}
+
+.body-about h4{
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.body-about h4 span{
+    color: orangered;
+}
+
+.body-about p{  
+    padding: 0 50px;
+    text-align: justify;
+    padding-bottom: 30px;
+    font-size: 25px;
+}
+
+.btn{
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: orangered;
+    font-weight: bold;
+}
 
 
+/**************** STUDY **********************/
 
+.study{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #696969;
+}
 
+.title-study{
+    font-size: 35px;
+    margin-top: 70px;
+}
+
+.box-study{
+    padding: 0 70px;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 30px;
+    margin-bottom: 70px;
+    /* border: solid 1px black; */
+}
+
+.card-study{
+    height: 250px;
+	width: 335px;
+    border: solid 1px black;
+    background-color: rgb(255, 255, 255);
+
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card-study img {
+    width: 70px;
+    height: auto;
+}
+
+/**************** WHASSAP TELEGRAM **********************/
 
 
 
@@ -233,5 +327,49 @@ body{
         top: 55%;
         right: 5%;
     }
+
+
+    /**************** About Me **********************/
+.about{
+    padding: 80px 0;
+}
+
+.body-about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+.body-about img{
+    margin-left: 15%;
+	width: 220px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    
+}
+
+.body-about h2{
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.body-about h4{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.body-about p{ 
+    padding: 0 15px;
+    text-align: justify;
+    padding-bottom: 50px;
+    font-size: 16px;
+}
+
+.about-text{
+    padding: 15px;
+}
+
 
 }
