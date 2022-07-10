@@ -92,9 +92,8 @@ body{
 }
 /******************* HERO****************/
 .hero{
-    height: 100vh;
+    height: calc(100vh - 80px);
     width:100%;
-
     background-image: url(/img/background-hand-teclar.avif);
     background-size: cover;
     background-position: center;
@@ -111,20 +110,36 @@ body{
 /******************* MEDIAS****************/
 
 @media (max-width: 768px){
-    body{
-      
-        padding-top: 60px 20px 0; /* para que flote encima del contenido*/
-    }
+
     
     .header{
-        height: 60px;
+        background-color: black;
+        height: 80px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;   
+    
     }
-    /******************NAV***************************************/
+    /******************MEDIAS-NAV***************************************/
     .logo{
-        font-size: 25px;
-        font-weight: bold;
-        padding: 0 20px;
-        line-height: 60px; /*tamaño del header*/
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo img{
+        padding-left: 30px;
+        height: 35px;
+        width: auto;
+    
+    }
+
+    .nav{
+        height: 80px;
+        max-width: 992px;
+        padding: 0 80px;
+       
     }
     
     .nav-menu{
@@ -170,12 +185,13 @@ body{
     }
 
     /************HERO*********************/
-
-    .header{
+    .hero{
+        height: 100vh;
+        width:100%;
+        background-image: url(/img/background-hand-teclar.avif);
+        background-size: cover;
+        background-position: center;
         
-        height: 80px;
-        
-       
-    
     }
+
 }
