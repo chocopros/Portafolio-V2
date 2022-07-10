@@ -153,7 +153,7 @@ body{
 
 .body-about img{
     height: auto;
-	width: 500px;
+	width: 400px;
     border-radius: 50%;
     margin-right: 50px;
 }
@@ -199,7 +199,7 @@ body{
 }
 
 .title-study{
-    font-size: 40px;
+    font-size: clamp(20px, 7vw, 40px);
     margin-top: 70px;
 }
 
@@ -337,14 +337,11 @@ body{
     width: 100%;
     text-align: center;
     margin-bottom: 30px;
-    
-
-
 }
 
 .portafolio-web h2 {
     margin: 70px 0;
-    font-size: 45px;
+    font-size: clamp(30px, 7vw, 45px);
 }
 
 .box-portafolio{
@@ -408,7 +405,7 @@ footer p:nth-child(2){
 	line-height: 26px;
 }
 footer h3{
-    font-size: 35px;
+    font-size: clamp(25px, 7vw, 35px);
     margin-bottom: 35px;
     color: white;
 }
@@ -439,12 +436,15 @@ footer p{
     color: orangered;
 }
 
+.footer-text {
+    color: red;
+}
 
-
-
-
-
-
+/***********************************/
+/***********************************/
+/***********************************/
+/***********************************/
+/***********************************/
 
 
 
@@ -563,7 +563,7 @@ footer p{
 
     .body-about img{
         margin-left: 15%;
-        width: 220px;
+        width: 280px;
         border-radius: 50%;
         margin-bottom: 30px;
         
@@ -571,23 +571,32 @@ footer p{
 
     .body-about h2{
         margin-bottom: 15px;
-        font-size: 30px;
+        font-size: 35px;
     }
 
     .body-about h4{
         margin-bottom: 20px;
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .body-about p{ 
         padding: 0 15px;
         text-align: justify;
         padding-bottom: 50px;
-        font-size: 16px;
+        font-size: 25px;
     }
 
     .about-text{
         padding: 15px;
+    }
+
+    /**************** SERVICES **********************/
+    .no-decoration{
+        text-decoration: none;
+    }
+
+    .service h2{
+        font-size: clamp(35px, 7vw, 150px);
     }
 
     /**************** WHASSAP TELEGRAM **********************/
@@ -639,18 +648,6 @@ footer p{
         align-items: center;
         justify-content: center;
         
-    }
-
-    footer h3{
-        font-size: 20px;
-        margin-top: 30px;
-        margin-bottom: 10px;
-        color: white;
-    }
-
-    .footer-text{
-        color: red;
-        font-size: 20px;
     }
 
     footer p{
