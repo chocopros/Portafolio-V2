@@ -48,6 +48,7 @@ body{
     display: flex;
     margin-right: 40px;
     list-style: none;
+    z-index: 5;
 
 }
 
@@ -98,6 +99,36 @@ body{
     background-size: cover;
     background-position: center;
     
+    
+}
+
+/******* TItle Principal*********/
+
+.body-tittle-ppal{
+    /* border: solid 1px white; */
+    position: absolute;
+    top: 40%;
+    right: 15%;
+    
+}
+.body-tittle-ppal h1,
+.body-tittle-ppal h3,
+.body-tittle-ppal h4{
+    color: white;
+}
+
+.body-tittle-ppal span,
+.body-tittle-ppal h1{
+    font-size: clamp(35px, 7vw, 150px);
+}
+.body-tittle-ppal h4,
+.body-tittle-ppal h3{
+    font-size: clamp(25px, 7vw, 30px);
+}
+
+
+.body-tittle-ppal span{
+    color: orangered;
 }
 
 
@@ -117,6 +148,7 @@ body{
         height: 80px;
         width: 100%;
         position: fixed;
+        z-index: 2;
         top: 0;
         left: 0;   
     
@@ -129,7 +161,7 @@ body{
     }
 
     .logo img{
-        padding-left: 30px;
+        padding-left: 10px;
         height: 35px;
         width: auto;
     
@@ -151,6 +183,7 @@ body{
         position: fixed;
         left: 0;
         top: 80px;
+        z-index: 2;
         width: 100%;
         padding: 20px 0;
 
@@ -159,6 +192,7 @@ body{
 
         left: 100%;
         transition: left 0.3s;
+
     }
     
     .nav-menu-item{
@@ -191,7 +225,13 @@ body{
         background-image: url(/img/background-hand-teclar.avif);
         background-size: cover;
         background-position: center;
-        
+    }
+
+    .body-tittle-ppal{
+        position: absolute;
+        z-index: 1;
+        top: 55%;
+        right: 5%;
     }
 
 }
