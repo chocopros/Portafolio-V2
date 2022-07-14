@@ -11,6 +11,7 @@ main{
 }
 
 body{
+    min-width: 320px;
     font-family: sans-serif;
     padding: 80px 0 0; /*para que flote encima del contenido */
 }
@@ -30,8 +31,9 @@ body{
 .nav{
     display: flex;
     justify-content: space-between;
-    max-width: 992px;
     margin: 0 auto;
+    max-width: 1024px;
+    
 
 }
 
@@ -148,6 +150,9 @@ body{
 /**************** About Me **********************/
 
 .about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 	width: 100%;
 	padding: 100px 5%;
     background-image: url(https://static.vecteezy.com/system/resources/previews/002/858/130/original/white-abstract-background-with-modern-shapes-free-vector.jpg);
@@ -160,6 +165,7 @@ body{
     display: flex;
     align-items: center;
     /* border: 1px solid black; */
+    max-width: 1024px;
 }
 
 .body-about img{
@@ -223,12 +229,13 @@ body{
     width: 100%;
     gap: 30px;
     margin-bottom: 70px;
+    max-width: 1024px;
     /* border: solid 1px black; */
 }
 
 .card-study{
-    height: 250px;
-	width: 335px;
+    height: 240px;
+	width: 325px;
     border: solid 1px black;
     background-color: rgb(255, 255, 255);
 
@@ -288,6 +295,11 @@ body{
     text-align: center;
     background-color: #b6b6b6;
     padding-bottom: 70px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .service h2{
@@ -301,6 +313,7 @@ body{
     margin: 0 5%;
     /* border: solid 1px white; */
     gap: 30px;
+    max-width: 1024px;
 
     display: flex;
     justify-content: space-evenly;
@@ -352,6 +365,9 @@ body{
     text-align: center;
     margin-bottom: 30px;
     background-color: white;
+
+    justify-content: center;
+    align-items: center;
 }
 
 .portafolio-web h2 {
@@ -366,6 +382,7 @@ body{
     justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 10px;
+    max-width: 1024px;
 }
 
 .card-web{
@@ -489,23 +506,23 @@ footer p{
     }
 
     .logo img{
-        padding-left: 10px;
-        height: 35px;
+       
+        height: 30px;
         width: auto;
     
     }
 
     .nav{
         height: 80px;
-        max-width: 992px;
-        padding: 0 80px;
+        min-width: 320;
+
        
     }
     
     .nav-menu{
         flex-direction: column;
         align-items: center;
-        margin-right: 20px;
+        
         list-style: none;
         background-color: #2c3e50;
         position: fixed;
@@ -513,7 +530,7 @@ footer p{
         top: 80px;
         z-index: 2;
         width: 100%;
-        padding: 20px 0;
+        
 
         height: calc(100% - 60px);
         overflow-y: auto;
@@ -539,6 +556,9 @@ footer p{
     .nav-toggle {
 
         display: block;
+        padding-right: 10%;
+        
+       
     
     }
 
@@ -574,6 +594,7 @@ footer p{
         justify-content: center;
         align-items: center;
         /* border: 1px solid black; */
+        width: 319px;
     }
 
     .body-about img{
@@ -602,6 +623,7 @@ footer p{
     }
 
     .about-text{
+        width: 310px;
         padding: 15px;
     }
 
@@ -667,6 +689,12 @@ footer p{
         justify-content: space-evenly;
         flex-wrap: wrap;
         gap: 10px;
+    }
+
+    .card-web{
+        /* border: solid 1px black; */
+        height: 280px;
+        width: 319px;
     }
 
     /******************* FOOTER ****************/
