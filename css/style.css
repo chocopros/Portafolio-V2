@@ -555,10 +555,12 @@ footer p{
     
     .nav-toggle {
 
-        display: block;
-        padding-right: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
         
-       
+    
     
     }
 
@@ -594,7 +596,8 @@ footer p{
         justify-content: center;
         align-items: center;
         /* border: 1px solid black; */
-        width: 319px;
+        min-width: 319px;
+        padding: 15px;
     }
 
     .body-about img{
@@ -615,17 +618,12 @@ footer p{
         font-size: 25px;
     }
 
-    .body-about p{ 
-        padding: 0 15px;
-        text-align: justify;
-        padding-bottom: 50px;
-        font-size: 25px;
-    }
 
-    .about-text{
-        width: 310px;
-        padding: 15px;
-    }
+   .about-text p{
+    padding: 0 10px;
+    padding-bottom: 20px;
+   }
+
 
     /**************** SERVICES **********************/
 
