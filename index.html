@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="/css/style.css">
     
     <!-- JAVASCRIPT -->
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/js/app.js" defer></script>
+
     
     <!-- ICONS -->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
@@ -64,7 +66,7 @@
         <!-- ABOUT ME ------------------------------>
         <section id="about-me" class="about">
             <div class="body-about">
-                <img src="/img/TEAMS-02.jpg" alt="photo my selfme" data-aos="zoom-in" >
+                <img src="/img/TEAMS-02.jpg" alt="photo my selfme">
                 <div class="about-text">
                     <h2>About Me</h2>
                     <h4>Developer <span>& Designer</span></h4>
@@ -118,7 +120,7 @@
             <h2 class="tittle-contact-redes">¿Would you like to contact me directly?</h2>
             <div class="container-chatmovil">
                 <a href="https://wa.me/584148100986"><img class="logo-ws" src="/img/whasapp3.png" alt="" data-aos="fade-down-right"></a>
-                <a href="https://t.me/Jesuschock"><img class="logo-telegram" src="/img/Telegram_2019_Logo.svg.png" alt="" data-aos="fade-down-left"></a>
+                <a href="https://t.me/Jesuschock"><img class="logo-telegram" src="/img/Telegram_2019_Logo.svg.png" alt="" data-aos="fade-down-right"></a>
             </div>
             <!-- <a class="button-two" href="#">Click aqui</a> -->
         </section>
@@ -128,10 +130,12 @@
         <section id="services" class="service">
             <h2>My Services</h2>
 
-            <div class="box-service" data-aos="fade-left">
+            <div class="box-service">
         
                 <!-- card-1 -->
-                <div class="card-service" data-aos="flip-left">
+                <div class="card-service" data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
                     <i class='bx bxl-css3'></i>
                     <h3>Web Development</h3>
                     <div class="boddy-card">
@@ -142,7 +146,9 @@
                 </div>
 
                 <!-- card-2 -->
-                <div class="card-service" data-aos="flip-left">
+                <div class="card-service" data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
                     <i class='bx bxs-timer'></i>
                     <h3>Project Management</h3>
                     <div class="boddy-card">
@@ -152,7 +158,9 @@
                 </div>
 
                 <!-- card-3 -->
-                <div class="card-service" data-aos="flip-left">
+                <div class="card-service" data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
                     <i class='bx bxs-bolt' ></i>
                     <h3>Electrical Projects</h3>
                     <div class="boddy-card">
@@ -162,7 +170,9 @@
                 </div>
 
                 <!-- card-4 -->
-                <div class="card-service" data-aos="flip-left">
+                <div class="card-service" data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
                     <i class='bx bx-support'></i>
                     <h3>Support Desk</h3>
                     <div class="boddy-card">
@@ -181,7 +191,9 @@
             <div class="box-portafolio">
         
                 <!-- WEB1 -->
-                <div class="card-web">
+                <div class="card-web" data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1000">
                     <h4>E-Commerce Store Desing</h4>
                     <div class="boddy-wed-card">
                         <img src="/img/web-portafolio/porta-1.jpg" alt="">
@@ -189,7 +201,9 @@
                 </div>
            
                 <!-- WEB2 -->
-                <div class="card-web">
+                <div class="card-web" data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1000">
                     <h4>E-Commerce Store Desing</h4>
                     <div class="boddy-wed-card">
                         <img src="/img/web-portafolio/porta-2.jpg" alt="">
@@ -197,7 +211,9 @@
                 </div>
 
                 <!-- WEB3 -->
-                <div class="card-web">
+                <div class="card-web" data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1000">
                     <h4>E-Commerce Store Desing</h4>
                     <div class="boddy-wed-card">
                         <img src="/img/web-portafolio/porta-3.jpg" alt="">
@@ -205,7 +221,9 @@
                 </div>
 
                 <!-- WEB4 -->
-                <div class="card-web">
+                <div class="card-web" data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1000">
                     <h4>E-Commerce Store Desing</h4>
                     <div class="boddy-wed-card">
                         <img src="/img/web-portafolio/porta-4.jpg" alt="">
@@ -231,7 +249,6 @@
 	</footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="/js/app.js"></script>
     <script>
         AOS.init();
     </script>
