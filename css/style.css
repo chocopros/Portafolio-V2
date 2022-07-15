@@ -2,7 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
+
+
 
 main{
     padding: 0;
@@ -14,6 +17,7 @@ body{
     min-width: 320px;
     font-family: sans-serif;
     padding: 80px 0 0; /*para que flote encima del contenido */
+    scroll-behavior: smooth;
 }
 
 .header{

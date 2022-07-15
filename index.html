@@ -6,17 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio V2 Jesus Arechider</title>
     <!-- STYLES -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
+    
     <!-- JAVASCRIPT -->
     <script src="/js/app.js" defer></script>
+    
     <!-- ICONS -->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
 
 </head>
 <body>
     <!------------------------ NAV ---------------------->
     <header class="header">
-        <nav class="nav">
+        <nav class="nav"data-aos="zoom-in-down">
             <a href="#" class="logo nav-link"><img src="/img/LogoMy.png" alt=""></a>
             <button class="nav-toggle" aria-label="Abrir menú">
                 <i class='bx bx-menu'></i>
@@ -60,7 +64,7 @@
         <!-- ABOUT ME ------------------------------>
         <section id="about-me" class="about">
             <div class="body-about">
-                <img src="/img/TEAMS-02.jpg" alt="photo my selfme">
+                <img src="/img/TEAMS-02.jpg" alt="photo my selfme" data-aos="zoom-in" >
                 <div class="about-text">
                     <h2>About Me</h2>
                     <h4>Developer <span>& Designer</span></h4>
@@ -80,7 +84,7 @@
             <div class="box-study">
 
                 <!-- cardStudy-1 -->
-                <div class="card-study">
+                <div class="card-study" data-aos="fade-right">
                     <img class="logo-comercio" src="/img/Logo-liceo.webp" alt="">
                     <h3>Felipe Guevaras</h3>
                     <div class="pra">
@@ -89,7 +93,7 @@
                 </div>
 
                 <!-- cardStudy-2 -->
-                <div class="card-study">
+                <div class="card-study" data-aos="fade-right">
                     <img class="logo-santiago" src="/img/Logo-Santiago.jpeg" alt="">
                     <h3>I.U.P.S.M</h3>
                     <div class="pra">
@@ -113,8 +117,8 @@
         <section id="contact-fast" class="contact-me">
             <h2 class="tittle-contact-redes">¿Would you like to contact me directly?</h2>
             <div class="container-chatmovil">
-                <a href="https://wa.me/584148100986"><img class="logo-ws" src="/img/whasapp3.png" alt=""></a>
-                <a href="https://t.me/Jesuschock"><img class="logo-telegram" src="/img/Telegram_2019_Logo.svg.png" alt=""></a>
+                <a href="https://wa.me/584148100986"><img class="logo-ws" src="/img/whasapp3.png" alt="" data-aos="fade-down-right"></a>
+                <a href="https://t.me/Jesuschock"><img class="logo-telegram" src="/img/Telegram_2019_Logo.svg.png" alt="" data-aos="fade-down-left"></a>
             </div>
             <!-- <a class="button-two" href="#">Click aqui</a> -->
         </section>
@@ -124,10 +128,10 @@
         <section id="services" class="service">
             <h2>My Services</h2>
 
-            <div class="box-service">
+            <div class="box-service" data-aos="fade-left">
         
                 <!-- card-1 -->
-                <div class="card-service">
+                <div class="card-service" data-aos="flip-left">
                     <i class='bx bxl-css3'></i>
                     <h3>Web Development</h3>
                     <div class="boddy-card">
@@ -138,7 +142,7 @@
                 </div>
 
                 <!-- card-2 -->
-                <div class="card-service">
+                <div class="card-service" data-aos="flip-left">
                     <i class='bx bxs-timer'></i>
                     <h3>Project Management</h3>
                     <div class="boddy-card">
@@ -148,7 +152,7 @@
                 </div>
 
                 <!-- card-3 -->
-                <div class="card-service">
+                <div class="card-service" data-aos="flip-left">
                     <i class='bx bxs-bolt' ></i>
                     <h3>Electrical Projects</h3>
                     <div class="boddy-card">
@@ -158,7 +162,7 @@
                 </div>
 
                 <!-- card-4 -->
-                <div class="card-service">
+                <div class="card-service" data-aos="flip-left">
                     <i class='bx bx-support'></i>
                     <h3>Support Desk</h3>
                     <div class="boddy-card">
@@ -226,6 +230,9 @@
 		<p class="end-reserve">CopyRight By Jesus Arechider</p>
 	</footer>
 
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
