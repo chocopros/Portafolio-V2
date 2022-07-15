@@ -313,7 +313,7 @@ body{
     margin: 0 5%;
     /* border: solid 1px white; */
     gap: 30px;
-    max-width: 1024px;
+    max-width: 768px;
 
     display: flex;
     justify-content: space-evenly;
